@@ -1,0 +1,5 @@
+FROM java:16
+VOLUME /tmp
+EXPOSE 7076
+ADD Crud-Backy-0.0.1-SNAPSHOT.jar Employee_Directory.jar
+ENTRYPOINT ["java","-jar","Employee_Directory.jar"]
